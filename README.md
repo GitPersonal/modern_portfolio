@@ -1,2 +1,3 @@
-#Juan Chavez Portfolio
+# Juan Chavez Portfolio
+
 This is my responsive portfolio
