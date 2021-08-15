@@ -1,66 +1,75 @@
-$primary-color:#444;
-$secondary-color:#eece1a;
-$show-home-image:true;
-$home-image: url(../img/macbook4.jpg);
-$background-opacity: 0.9;
-
-
-@mixin easeOut {
-transition: all 0.5s ease-out;     
-}
-
-
-@mixin background {
-    @if $show-home-image {
-        &#bg-img{
-            background: $home-image;
-            background-attachment: fixed;
-            background-size: cover;
-       &:after{
-           content: "";
-         position: absolute;
-         top:0;
-         right: 0;
-         width: 100%;
-         height: 100%;
-         z-index: -1;
-        //  background:rgba($primary-color, $background-opacity);   
-        }
-        }
-        
-    }
-}
-
-//Set Text Color
-@function set-text-color($color){
-    @if(lightness($color) > 40){
-        @return #000;
-    }@else{
-        @return #fff;
-    }
-}
-
-
-
-// Media Query Mixins
-@mixin mediaSm {
-    @media screen and (max-width: 500px){
-        @content;
-    }
-}
-@mixin mediaMd {
-    @media screen and (max-width: 768px){
-        @content;
-    }
-}
-@mixin mediaLg {
-    @media screen and (max-width: 769px) and
-    (max-width:1170px){
-        @content;
-    }
-}
-@mixin mediaXl {
-    @media screen and (min-width: 1771px){
-        @content;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <main>
+       <header>
+           <span>Juan Chavez</span> <span><a href="mailto:juanchavez11@yahoo.com">juanchavez11@yahoo.com</a></span> <span><a href="tel:817-343-9315">817-343-9315</a></span>
+           <span class="imgSocial"><a href="https://www.linkedin.com/in/juan-chavez-88587734/"><img src="images/linkedin.png" alt=""></a>
+            <a href="https://github.com/GitPersonal"><img src="images/github.png" alt=""></a></span>
+       </header>
+       <section class="nested">
+           <div id="work">
+               <section>
+                   <h2>Work</h2>
+               </section>
+               <section class="assets">
+                   <a href="assets.html"><img src="images/sample-slice1.png" alt=""></a>
+                   <a href="assets.html"><img src="images/sample-slice1.png" alt=""></a>
+               </section>
+               <p><a href="assets.html">More</a></p>
+           </div>
+           <div id="skills">
+               <section>
+                <img src="images/me-web-v3.png" alt="">
+                <h2>Juan Chavez</h2>
+                <h3>Skills</h3>
+                <p>HTML, CSS, SASS, Basic JavaScript, Salesforce/Demandware, Shopify, Visual Studio Code, JIRA, Microsoft Teams, 
+                    Slack, WorkFront, Basecamp, SourceTree, Adobe Photoshop CS6, Adobe Illustrator CS6, 
+                    Visual Studio, Atom, Sublime Text, Mac OS X, PC Windows, Scene 7 CMS, GSI CMS</p>
+               </section>
+                <section class="experience">
+                    <h3>Pier1 Web Content Specialist</h3>
+                    <h4 class="date">November 2014 - current</h4>
+                    <ul>
+                        <li>Utilize Demandware/Salesforce Commerce Cloud on a regular basis 
+                        </li>
+                        <li>Collaborate with design team in order to code mock-ups</li>
+                        <li>Work with content team on promotions schedule.</li>
+                        <li>Slice Photoshop files according to comps</li>
+                        <li>Build assets with HTML, CSS, basic JavaScript, Git and optimize images</li>
+                        <li>Create assets, slots and campaigns</li>
+                        <li>Set up various coupons for on-line promotions  </li>
+                        <li>Test all assets and send out links to web content team and copywriters for review</li>
+                    </ul>
+                </section>    
+                <section class="experience">
+                    <h3>RadioShack Web Designer</h3>
+                    <h4 class="date">October 2011 - November 2014</h4>
+                    <ul>
+                        <li>Develop assets based on creative briefs for the online Electronics & Accessories, DIY, Batteries, Cell Phones Categories</li>
+                        <li>Designed, debugged existing code, programmed and deployed RadioShack.com homepage content
+                        </li>
+                        <li>Designed numerous web responsive banners for radioshack.com</li>
+                        <li>Optimize product images, color correct and crop them to specific dimensions using Adobe Photoshop</li>
+                        <li>Schedule weekly campaigns and product launches for radioshack.com</li>
+                        <li>Built pages with HTML, CSS and widgets using GSI content management system</li>
+                        <li>Trained and developed on Demandware for new launch of radioshack.com</li>
+                    </ul>
+                </section>    
+           </div>
+       </section>
+       <footer>Copyright &copy; 2021</footer>
+   </main>
+</body>
+</html>

@@ -1,173 +1,144 @@
-@import 'config';
-@import 'menu';
-
+$primary-color: #4A90E2;
+$secondary-color: #043670;
+$white-color: #fff;
+// General styles
 * {
-    box-sizing: border-box;
-}
-body{
-    @include background; 
-    background: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-}
-// Headings
-h1,h2,h3{
-    margin: 0;
-    font-weight: 400;
-    &.lg-heading{
-        font-size: 6rem;
-    }
-    &.sm-heading{
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
-    }
+    padding: 0;
+} 
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    // background: $secondary-color;
+    color: $white-color;
 }
 
 a{
-    color: #fff;
     text-decoration: none;
+    color: $white-color;
 }
-header {
-    position: fixed;
-    z-index: 2;
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+img {
     width: 100%;
 }
 
-.text-secondary{
-    color: $secondary-color;
-}
 
-main{
-    padding: 4rem;
-    // height: 100%;
-    min-height: calc(100vh - 60px);
-
-    .icons{
-        margin-top: 1rem;
-        a{
-             padding:0.4rem;
-             &:hover {
-                 color: $secondary-color;
-                 @include easeOut();
-             }
-        }
-    }
-    &#home{
-        overflow: hidden;
-        h1{
-            margin-top: 20vh;
-        }
-    }
-    }
-.about-info{
-    display:grid;
-    grid-gap:30px;
-    grid-template-areas: 
-    'bioimage bio bio'
-    'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
-    img{
-        width: 40%;
-    height: auto;
-    }
-    .bio-image{
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-}
-.bio{
-    grid-area: bio;
-    font-size: 1.5rem;
-}
-.job-1{
-    grid-area: job1;
-}
-.job-2{
-    grid-area: job2;
-}
-.job-3{
-    grid-area: job3;
-}
-.job{
-    background: lighten($color: $primary-color, $amount: 5);
-    padding:0.5rem;
-    border-bottom: $secondary-color 5px solid;
-}
-}
-
-// Work/Projects
-.projects{
+main {
     display: grid;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
-    img{
-        width: 100%;
-        border: 3px #fff solid;
-        &:hover{
-            opacity: 0.5;
-            border-color: $secondary-color;
-            @include easeOut;
-        }
-    }
-}
-
-// Contact page
-.boxes{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
-    div{
-        font-size: 2rem;
-        border:3px #fff solid;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
-        @include easeOut;
-        &:hover {
-            padding: 0.5rem 1.5rem;
-            background:$secondary-color;
-            color: set-text-color($secondary-color);
-            span{
-                color: set-text-color($secondary-color);
-            } 
-        }
-    }
-}
-
-//Button Styles
-.btn{
-    display: block;
-    padding: 0.5rem 1rem;
-    border:0;
-    margin-bottom: 0.3rem;
-    &:hover{
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-    }
-}
-
-.btn-dark{
-    @extend .btn;
-    background:darken($color: $primary-color, $amount: 50);
-    color:#fff;
-}
-.btn-light{
-@extend .btn;
-background:lighten($color: $primary-color, $amount: 50);
-    color:#333;
-}
-
-#main-footer{
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr .05fr;
+    // grid-gap: .2rem;
+    // max-width: 1700px;
+    // width: 100%;
+    // margin: 0 auto;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
     text-align: center;
-    padding: 1rem;
-    background: darken($color: $primary-color, $amount: 10);
-    color: set-text-color ($primary-color);
-    height: 60px;
+    header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            background: $primary-color;
+        span{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .nested {
+        display: grid;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 1fr;
+        #work {
+            background: $white-color;
+            padding: 1rem;
+            color: $primary-color;
+           section{
+            h2 {
+                text-transform: capitalize;
+            }
+           }
+           a{
+            text-decoration: none;
+            color: $primary-color;
+            }
+        }
+        #skills {
+            background: $secondary-color;
+            padding: 2rem;
+            h2 {
+                text-transform: capitalize;
+            }
+            h3,h4 {
+                color: $primary-color;
+                text-transform: capitalize;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+                border: 6px solid $primary-color;
+                border-radius: 50%;
+                // background: $primary-color;
+            }
+            .experience{
+                ul{
+                    li{
+                        text-align: left;
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background: $primary-color;
+        padding: 1rem;
+    }
+
+
+    @media only screen and (min-width:550px) {
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "nested nested"
+            "footer footer"
+        ;
+        header {
+            grid-area: header;
+            flex-direction: row;
+           padding: 2.5rem 2rem 0 2rem;
+           justify-content: space-between;
+           span{
+            font-size: 1rem;
+        }
+        }
+        .nested {
+            grid-area: nested;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 1fr;
+            p {
+                // background: yellow;
+                margin: .5rem;
+            }
+        }
+        footer{
+            grid-area: footer;
+            // background: magenta;
+        }
+    }
 }
-@import 'mobile';
