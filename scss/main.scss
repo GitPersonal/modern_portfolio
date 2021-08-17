@@ -86,6 +86,12 @@ main {
                 color: $primary-color;
                 text-transform: capitalize;
             }
+            h4{
+                font-weight: 400;
+            }
+            p{
+                padding-bottom: 2rem;
+            }
             img {
                 width: 150px;
                 height: 150px;
@@ -100,6 +106,7 @@ main {
                         list-style-type: disc;
                     }
                 }
+                padding-bottom: 2rem;
             }
         }
     }
@@ -109,7 +116,7 @@ main {
     }
 
 
-    @media only screen and (min-width:550px) {
+    @media only screen and (min-width:768px) {
         grid-template-columns: 1fr 1fr;
         // grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
