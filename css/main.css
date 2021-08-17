@@ -90,7 +90,7 @@ main footer {
   background: #4A90E2;
   padding: 1rem;
 }
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 768px) {
   main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header" "nested nested" "footer footer";
