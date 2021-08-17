@@ -1,151 +1,121 @@
-$primary-color: #4A90E2;
-$secondary-color: #043670;
-$white-color: #fff;
-// General styles
 * {
     margin: 0;
     padding: 0;
-} 
-body {
-    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
-    // background: $secondary-color;
-    color: $white-color;
-}
-
-a{
+    color: #fff;
+  }
+  
+  a {
     text-decoration: none;
-    color: $white-color;
-}
-
-ul {
+    color: #fff;
+  }
+  
+  ul {
     list-style: none;
-}
-
-h1, h2, h3 {
+  }
+  
+  h1, h2, h3 {
     text-transform: uppercase;
-}
-
-img {
+  }
+  
+  img {
     width: 100%;
-}
-
-
-main {
+  }
+  
+  main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr 1fr .05fr;
-    // grid-gap: .2rem;
-    // max-width: 1700px;
-    // width: 100%;
-    // margin: 0 auto;
+    grid-template-rows: 0.1fr 1fr 0.05fr;
     justify-content: center;
     align-self: center;
     height: 100vh;
     text-align: center;
-    header {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-self: center;
-            background: $primary-color;
-        span{
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        img{
-            width: 50px;
-            height: 50px;
-        }
+  }
+  main header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background: #4A90E2;
+  }
+  main header span {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  main header img {
+    width: 50px;
+    height: 50px;
+  }
+  main .nested {
+    display: grid;
+  }
+  main .nested #work {
+    background: #fff;
+    padding: 1rem;
+    color: #4A90E2;
+  }
+  main .nested #work section h2 {
+    text-transform: capitalize;
+  }
+  main .nested #work a {
+    text-decoration: none;
+    color: #4A90E2;
+  }
+  main .nested #skills {
+    background: #043670;
+    padding: 2rem;
+  }
+  main .nested #skills h2 {
+    text-transform: capitalize;
+  }
+  main .nested #skills h3, main .nested #skills h4 {
+    color: #4A90E2;
+    text-transform: capitalize;
+  }
+  main .nested #skills img {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #4A90E2;
+    border-radius: 50%;
+  }
+  main .nested #skills .experience ul li {
+    text-align: left;
+    list-style-type: disc;
+  }
+  main footer {
+    background: #4A90E2;
+    padding: 1rem;
+  }
+  @media only screen and (min-width: 550px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "header header" "nested nested" "footer footer";
     }
-    .nested {
-        display: grid;
-        // grid-template-columns: 1fr;
-        // grid-template-rows: 1fr;
-        #work {
-            background: $white-color;
-            padding: 1rem;
-            color: $primary-color;
-           section{
-            h2 {
-                text-transform: capitalize;
-            }
-           }
-           a{
-            text-decoration: none;
-            color: $primary-color;
-            }
-        }
-        #skills {
-            background: $secondary-color;
-            padding: 2rem;
-            h2 {
-                text-transform: capitalize;
-            }
-            h3,h4 {
-                color: $primary-color;
-                text-transform: capitalize;
-            }
-            h4{
-                font-weight: 400;
-            }
-            p{
-                padding-bottom: 2rem;
-            }
-            img {
-                width: 150px;
-                height: 150px;
-                border: 6px solid $primary-color;
-                border-radius: 50%;
-                // background: $primary-color;
-            }
-            .experience{
-                ul{
-                    li{
-                        text-align: left;
-                        list-style-type: disc;
-                    }
-                }
-                padding-bottom: 2rem;
-            }
-        }
+    main header {
+      grid-area: header;
+      flex-direction: row;
+      padding: 2.5rem 2rem 0 2rem;
+      justify-content: space-between;
     }
-    footer{
-        background: $primary-color;
-        padding: 1rem;
+    main header span {
+      font-size: 1rem;
     }
-
-
-    @media only screen and (min-width:768px) {
-        grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-            "header header"
-            "nested nested"
-            "footer footer"
-        ;
-        header {
-            grid-area: header;
-            flex-direction: row;
-           padding: 2.5rem 2rem 0 2rem;
-           justify-content: space-between;
-           span{
-            font-size: 1rem;
-        }
-        }
-        .nested {
-            grid-area: nested;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            // grid-template-rows: 1fr;
-            p {
-                // background: yellow;
-                margin: .5rem;
-            }
-        }
-        footer{
-            grid-area: footer;
-            // background: magenta;
-        }
+    main .nested {
+      grid-area: nested;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
-}
+    main .nested p {
+      margin: 0.5rem;
+    }
+    main footer {
+      grid-area: footer;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
