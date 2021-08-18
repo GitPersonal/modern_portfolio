@@ -67,7 +67,7 @@ main .nested #work .assets a button {
   padding: 0.5rem;
   font-size: 1rem;
 }
-main .nested #work .assets a button::before {
+main .nested #work .assets a button .fa-github::before {
   margin-right: 4px;
 }
 main .nested #work a {
