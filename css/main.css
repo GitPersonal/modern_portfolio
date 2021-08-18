@@ -62,7 +62,7 @@ main .nested #work section h2 {
   text-transform: capitalize;
 }
 main .nested #work .assets a button {
-  width: 30%;
+  width: 35%;
   border: none;
   padding: 0.5rem;
   font-size: 1rem;
