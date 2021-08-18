@@ -67,6 +67,9 @@ main .nested #work .assets button {
   padding: 0.5rem;
   font-size: 1rem;
 }
+main .nested #work .assets button::before {
+  margin-right: 4px;
+}
 main .nested #work a {
   text-decoration: none;
   color: #4A90E2;
@@ -152,4 +155,4 @@ main footer {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
