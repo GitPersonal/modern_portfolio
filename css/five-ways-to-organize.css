@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #3B3C43;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+#hero {
+  padding-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.container .h-bar {
+  border-top: 2px solid grey;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.container .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "infoContent" "mainImg" "subImg";
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.container .content .info-content {
+  grid-area: infoContent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.container .content .info-content .wrap {
+  grid-area: wrap;
+}
+.container .content .info-content .wrap .number {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 3px 7px 3px 7px;
+  background: #fff;
+  border: 2px solid #666;
+  color: #666;
+  text-align: center;
+}
+.container .content .info-content .wrap .infoH2 {
+  grid-area: infoH2;
+}
+.container .content .info-content .infoP {
+  grid-area: infoP;
+  padding: 0 2rem;
+}
+.container .content .info-content .large-content {
+  display: none;
+  grid-area: largeContent;
+}
+.container .content .mainImg {
+  grid-area: mainImg;
+}
+.container .content .subImg {
+  grid-area: subImg;
+}
+@media only screen and (min-width: 768px) {
+  .container #hero {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    background: #F7F7F7;
+    padding: 0;
+    line-height: 0;
+  }
+  .container #hero #hero-picture {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    line-height: 0;
+    background: white;
+  }
+  .container #hero .content-text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    line-height: 1.6;
+  }
+  .container #hero .content-text #heroH1 {
+    grid-area: heroH1;
+  }
+  .container #hero .content-text #heroH2 {
+    grid-area: heroH2;
+  }
+  .container #hero .content-text #heroP {
+    grid-area: heroP;
+    padding: 0 1rem;
+  }
+  .container .h-bar {
+    display: none;
+  }
+  .container .content {
+    grid-template-columns: 0.25fr 0.5fr;
+    grid-template-areas: "mainImg infoContent";
+    max-width: 1024px;
+    grid-gap: 0.5rem;
+    align-items: end;
+    margin-top: 2rem;
+  }
+  .container .content .info-content {
+    grid-area: infoContent;
+    align-items: start;
+    padding-bottom: 0;
+  }
+  .container .content .info-content .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 2rem;
+  }
+  .container .content .info-content .wrap .number {
+    width: 15px;
+    height: 15px;
+    padding: 0px 2px 4px 2px;
+    margin: 0 8px 0 0;
+    font-size: 0.75rem;
+  }
+  .container .content .info-content .wrap .infoH2 {
+    font-size: 1rem;
+  }
+  .container .content .info-content .infoP {
+    text-align: left;
+    font-size: 0.75rem;
+    padding: 0 2rem 0.5rem 2rem;
+  }
+  .container .content .info-content .large-content {
+    display: flex;
+  }
+  .container .content .mainImg {
+    grid-area: mainImg;
+  }
+  .container .content .subImg {
+    grid-area: subImg;
+  }
+  .container .content .mobile-content {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=five-ways-to-organize.css.map */
