@@ -61,13 +61,13 @@ main .nested #work {
 main .nested #work section h2 {
   text-transform: capitalize;
 }
-main .nested #work .assets button {
+main .nested #work .assets a button {
   width: 30%;
   border: none;
   padding: 0.5rem;
   font-size: 1rem;
 }
-main .nested #work .assets button::before {
+main .nested #work .assets a button::before {
   margin-right: 4px;
 }
 main .nested #work a {
