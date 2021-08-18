@@ -61,9 +61,26 @@ main .nested #work {
 main .nested #work section h2 {
   text-transform: capitalize;
 }
+main .nested #work .assets button {
+  width: 20%;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
 main .nested #work a {
   text-decoration: none;
   color: #4A90E2;
+}
+main .nested #work button {
+  background-color: #4A90E2;
+  border: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 1rem;
+}
+main .nested #work button a {
+  color: #fff;
 }
 main .nested #skills {
   background: #043670;
@@ -76,11 +93,20 @@ main .nested #skills h3, main .nested #skills h4 {
   color: #4A90E2;
   text-transform: capitalize;
 }
+main .nested #skills h4 {
+  font-weight: 400;
+}
+main .nested #skills p {
+  padding-bottom: 2rem;
+}
 main .nested #skills img {
   width: 150px;
   height: 150px;
   border: 6px solid #4A90E2;
   border-radius: 50%;
+}
+main .nested #skills .experience {
+  padding-bottom: 2rem;
 }
 main .nested #skills .experience ul li {
   text-align: left;
@@ -112,9 +138,12 @@ main footer {
   main .nested p {
     margin: 0.5rem;
   }
+  main .nested #work button {
+    width: 30%;
+  }
   main footer {
     grid-area: footer;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
