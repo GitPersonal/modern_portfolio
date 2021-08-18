@@ -62,7 +62,7 @@ main .nested #work section h2 {
   text-transform: capitalize;
 }
 main .nested #work .assets button {
-  width: 20%;
+  width: 21%;
   border: none;
   padding: 0.5rem;
   font-size: 1rem;
@@ -137,6 +137,12 @@ main footer {
   }
   main .nested p {
     margin: 0.5rem;
+  }
+  main .nested #work .assets button {
+    width: 20%;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
   }
   main .nested #work button {
     width: 30%;
