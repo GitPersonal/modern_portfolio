@@ -90,46 +90,4 @@ main footer {
   }
 }
 
-main .banner .align-self-item {
-  align-self: center;
-}
-main .banner .small-wrapper .smallGridBnr {
-  margin: 0.25rem;
-  padding: 0.25rem;
-}
-main .banner .big-wrapper .largeGridBnr {
-  margin: 0.25rem;
-  padding: 0.25rem;
-}
-@media only screen and (min-width: 768px) {
-  main {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "header header" "banner banner" "footer footer";
-  }
-  main .banner {
-    max-width: 1200px;
-    margin: auto;
-    grid-area: banner;
-  }
-  main .banner .small-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  main .banner .small-wrapper .smallGridBnr {
-    margin: 1rem;
-    padding: 1rem;
-  }
-  main .banner .big-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  main .banner .big-wrapper .largeGridBnr {
-    margin: 0.25rem;
-    padding: 0.25rem;
-  }
-}
-
 /*# sourceMappingURL=main.css.map */
