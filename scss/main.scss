@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     // background: $secondary-color;
-    color: $white-color;
+    color: $white-color;    
 }
 
 a{
@@ -35,10 +35,6 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .1fr 1fr .05fr;
-    // grid-gap: .2rem;
-    // max-width: 1700px;
-    // width: 100%;
-    // margin: 0 auto;
     justify-content: center;
     align-self: center;
     height: 100vh;
@@ -50,7 +46,7 @@ main {
             align-self: center;
             background: $primary-color;
         span{
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin-bottom: 1rem;
         }
         img{
@@ -58,69 +54,7 @@ main {
             height: 50px;
         }
     }
-    .nested {
-        display: grid;
-        // grid-template-columns: 1fr;
-        // grid-template-rows: 1fr;
-        #work {
-            background: $white-color;
-            padding: 1rem;
-            color: $primary-color;
-           section{
-            h2 {
-                text-transform: capitalize;
-            }
-           }
-           a{
-            text-decoration: none;
-            color: $primary-color;
-            }
-            button{
-                background-color: $primary-color;
-                border: none;
-                padding: 1rem;
-                text-transform: uppercase;
-                width: 80%;
-                margin: 1rem;
-                a{
-                    color: $white-color;
-                }
-            }
-        }
-        #skills {
-            background: $secondary-color;
-            padding: 2rem;
-            h2 {
-                text-transform: capitalize;
-            }
-            h3,h4 {
-                color: $primary-color;
-                text-transform: capitalize;
-            }
-            h4{
-                font-weight: 400;
-            }
-            p{
-                padding-bottom: 2rem;
-            }
-            img {
-                width: 150px;
-                height: 150px;
-                border: 6px solid $primary-color;
-                border-radius: 50%;
-                // background: $primary-color;
-            }
-            .experience{
-                ul{
-                    li{
-                        text-align: left;
-                        list-style-type: disc;
-                    }
-                }
-                padding-bottom: 2rem;
-            }
-        }
-    }
+  
     footer{
         background: $primary-color;
         padding: 1rem;
@@ -138,8 +72,8 @@ main {
         header {
             grid-area: header;
             flex-direction: row;
-           padding: 2.5rem 2rem 0 2rem;
-           justify-content: space-between;
+            padding: 2.5rem 2rem 0 2rem;
+            justify-content: space-between;
            span{
             font-size: 1rem;
         }
@@ -150,10 +84,17 @@ main {
             grid-template-columns: 1fr 1fr;
             // grid-template-rows: 1fr;
             p {
-                // background: yellow;
                 margin: .5rem;
             }
             #work {
+                .assets{
+                    button{
+                        width: 30%;
+                        border: none;
+                        padding: 0.5rem;
+                        font-size: 1rem;
+                    }
+                }
                 button{
                     width: 30%;
                 }
@@ -161,7 +102,7 @@ main {
         }
         footer{
             grid-area: footer;
-            // background: magenta;
         }
     }
 }
+@import 'banner-styles';

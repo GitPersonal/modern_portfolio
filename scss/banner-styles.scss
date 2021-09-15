@@ -1,0 +1,80 @@
+main {
+    // .banner {
+    //     grid-area: banner;
+    //     // display: grid;
+    //     // grid-template-columns: 1fr 1fr;
+        
+    // }
+    .banner{
+        .align-self-item {
+            align-self: center;
+        }
+        // background-color: $primary-color;
+        .small-wrapper{
+            .smallGridBnr{
+                // grid-area: smallGridBnr;
+                margin: .25rem;
+                padding: .25rem;
+                // background-color: greenyellow;   
+            }
+        }
+        .big-wrapper{
+            .largeGridBnr{
+                // grid-area: smallGridBnr;
+                margin: .25rem;
+                padding: .25rem;
+                // background-color: greenyellow;   
+            }
+        }
+    }
+    @media only screen and (min-width:768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "banner banner"
+            "footer footer"
+        ;
+       
+        .banner {
+            max-width: 1200px;
+            margin: auto;
+            grid-area: banner;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 1fr 1fr;
+            // grid-template-areas:;
+            .small-wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                // grid-template-areas:
+                //     "smallGridBnr smallGridBnr"
+                //     "smallGridBnr smallGridBnr"
+                // ;
+                // padding: 1rem;
+                .smallGridBnr{
+                    // grid-area: smallGridBnr;
+                    margin: 1rem;
+                    padding: 1rem;
+                    // background-color: greenyellow;   
+                }
+            }
+            .big-wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                // grid-template-areas: 
+                // "largeGridBnr largeGridBnr"
+                // ;
+                .largeGridBnr{
+                    // grid-area: largeGridBnr;
+                    margin: .25rem;
+                    padding: .25rem;
+                }
+            }
+        }
+       
+    }
+}

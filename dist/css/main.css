@@ -43,48 +43,12 @@ main header {
   background: #4A90E2;
 }
 main header span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 main header img {
   width: 50px;
   height: 50px;
-}
-main .nested {
-  display: grid;
-}
-main .nested #work {
-  background: #fff;
-  padding: 1rem;
-  color: #4A90E2;
-}
-main .nested #work section h2 {
-  text-transform: capitalize;
-}
-main .nested #work a {
-  text-decoration: none;
-  color: #4A90E2;
-}
-main .nested #skills {
-  background: #043670;
-  padding: 2rem;
-}
-main .nested #skills h2 {
-  text-transform: capitalize;
-}
-main .nested #skills h3, main .nested #skills h4 {
-  color: #4A90E2;
-  text-transform: capitalize;
-}
-main .nested #skills img {
-  width: 150px;
-  height: 150px;
-  border: 6px solid #4A90E2;
-  border-radius: 50%;
-}
-main .nested #skills .experience ul li {
-  text-align: left;
-  list-style-type: disc;
 }
 main footer {
   background: #4A90E2;
@@ -112,8 +76,59 @@ main footer {
   main .nested p {
     margin: 0.5rem;
   }
+  main .nested #work .assets button {
+    width: 30%;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  main .nested #work button {
+    width: 30%;
+  }
   main footer {
     grid-area: footer;
+  }
+}
+
+main .banner .align-self-item {
+  align-self: center;
+}
+main .banner .small-wrapper .smallGridBnr {
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+main .banner .big-wrapper .largeGridBnr {
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header header" "banner banner" "footer footer";
+  }
+  main .banner {
+    max-width: 1200px;
+    margin: auto;
+    grid-area: banner;
+  }
+  main .banner .small-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  main .banner .small-wrapper .smallGridBnr {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  main .banner .big-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  main .banner .big-wrapper .largeGridBnr {
+    margin: 0.25rem;
+    padding: 0.25rem;
   }
 }
 

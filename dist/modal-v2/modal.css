@@ -1,0 +1,79 @@
+body{
+    background-color: darkslateblue;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* to show modal on click */
+.modal-is-open .modal-overlay{
+    opacity: 1;
+    z-index: 1;
+}
+
+.main-content{
+    max-width:40em;
+    position: relative;
+}
+
+.button{
+    background-color:darkorange;
+    border:none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size:1rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+}
+
+/* modal popup */
+.modal-overlay{
+    align-items: center;
+    background-color:rgba(255, 140, 255, 0.5) ;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal{
+    align-items: center;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    flex-basis: 75%;
+    height: 50vh;
+}
+.modal-content{
+    color: darkorange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+}
+.close-btn{
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 0px 11px 3px 11px;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .modal{
+        flex-basis: 45%;
+    }
+  }
