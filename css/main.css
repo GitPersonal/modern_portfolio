@@ -34,6 +34,7 @@ main {
   align-self: center;
   height: 100vh;
   text-align: center;
+  position: relative;
 }
 main header {
   display: flex;
@@ -122,6 +123,9 @@ main .nested #skills .experience ul li {
 main footer {
   background: #4A90E2;
   padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   main {
@@ -156,6 +160,7 @@ main footer {
   }
   main footer {
     grid-area: footer;
+    position: initial;
   }
 }
 
