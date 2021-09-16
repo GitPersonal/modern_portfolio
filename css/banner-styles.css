@@ -1,40 +1,49 @@
-main .banner .align-self-item {
+#banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+#banner-grid .banner .align-self-item {
   align-self: center;
 }
-main .banner .small-wrapper .smallGridBnr {
+#banner-grid .banner .small-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#banner-grid .banner .small-wrapper .smallGridBnr {
   margin: 0.25rem;
   padding: 0.25rem;
 }
-main .banner .big-wrapper .largeGridBnr {
+#banner-grid .banner .big-wrapper .largeGridBnr {
   margin: 0.25rem;
   padding: 0.25rem;
 }
 @media only screen and (min-width: 768px) {
-  main {
+  #banner-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "header header" "banner banner" "footer footer";
   }
-  main .banner {
+  #banner-grid .banner {
     max-width: 1200px;
     margin: auto;
     grid-area: banner;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  main .banner .small-wrapper {
+  #banner-grid .banner .small-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #banner-grid .banner .small-wrapper .smallGridBnr {
+    padding: 0.5rem;
+  }
+  #banner-grid .banner .big-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  main .banner .small-wrapper .smallGridBnr {
-    margin: 1rem;
-    padding: 1rem;
-  }
-  main .banner .big-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  main .banner .big-wrapper .largeGridBnr {
+  #banner-grid .banner .big-wrapper .largeGridBnr {
     margin: 0.25rem;
     padding: 0.25rem;
   }

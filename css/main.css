@@ -159,4 +159,55 @@ main footer {
   }
 }
 
+#banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+#banner-grid .banner .align-self-item {
+  align-self: center;
+}
+#banner-grid .banner .small-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#banner-grid .banner .small-wrapper .smallGridBnr {
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+#banner-grid .banner .big-wrapper .largeGridBnr {
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+@media only screen and (min-width: 768px) {
+  #banner-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header header" "banner banner" "footer footer";
+  }
+  #banner-grid .banner {
+    max-width: 1200px;
+    margin: auto;
+    grid-area: banner;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #banner-grid .banner .small-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #banner-grid .banner .small-wrapper .smallGridBnr {
+    padding: 0.5rem;
+  }
+  #banner-grid .banner .big-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #banner-grid .banner .big-wrapper .largeGridBnr {
+    margin: 0.25rem;
+    padding: 0.25rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
