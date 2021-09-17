@@ -210,7 +210,7 @@ main footer {
   }
   #banner-grid .banner .big-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
   #banner-grid .banner .big-wrapper .largeGridBnr {
