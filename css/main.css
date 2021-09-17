@@ -129,7 +129,7 @@ main footer {
   display: flex;
   justify-content: space-evenly;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1700px) {
   main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header" "nested nested" "footer footer";
@@ -188,7 +188,7 @@ main footer {
   margin: 0.25rem;
   padding: 0.25rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1700px) {
   #banner-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
