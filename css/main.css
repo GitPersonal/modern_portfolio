@@ -200,6 +200,9 @@ main footer {
     grid-area: banner;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #banner-grid .banner .new-images {
+    display: grid;
+  }
   #banner-grid .banner .small-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
