@@ -19,7 +19,7 @@
   margin: 0.25rem;
   padding: 0.25rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1700px) {
   #banner-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -31,6 +31,9 @@
     grid-area: banner;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #banner-grid .banner .new-images {
+    display: grid;
+  }
   #banner-grid .banner .small-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -41,7 +44,7 @@
   }
   #banner-grid .banner .big-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
   #banner-grid .banner .big-wrapper .largeGridBnr {
