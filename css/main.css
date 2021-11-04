@@ -233,4 +233,12 @@ main footer {
   }
 }
 
+#landing-pg-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+#landing-pg-grid header {
+  grid-column: 1/span 12;
+}
+
 /*# sourceMappingURL=main.css.map */
