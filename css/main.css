@@ -238,5 +238,8 @@ main footer {
   grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
+#landing-pg-grid header {
+  background: #043670;
+}
 
 /*# sourceMappingURL=main.css.map */
