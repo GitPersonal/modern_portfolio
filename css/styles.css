@@ -423,9 +423,11 @@ img {
   .container footer .footer-copy {
     grid-column: 1/3;
     padding: 0 2rem;
+    justify-items: start;
+  }
+  .container footer .footer-copy h2 {
     font-size: 1.35rem;
     font-weight: 600;
-    justify-items: start;
     text-transform: uppercase;
   }
   .container footer .footer-copy .social-media {
