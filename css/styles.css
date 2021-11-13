@@ -437,8 +437,7 @@ img {
     font-size: 2rem;
     color: #545367;
     display: grid;
-    grid-template-columns: 0.1fr 0.1fr 0.1fr;
-    justify-items: none;
+    grid-template-columns: repeat(3, 1fr);
   }
   .container footer .footer-menu {
     grid-column: 4/5;
