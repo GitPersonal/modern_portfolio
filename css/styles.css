@@ -430,6 +430,9 @@ img {
     font-weight: 600;
     text-transform: uppercase;
   }
+  .container footer .footer-copy p {
+    text-align: left;
+  }
   .container footer .footer-copy .social-media {
     font-size: 2rem;
     color: #545367;
