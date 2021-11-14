@@ -118,7 +118,7 @@ img {
   color: #393939;
   display: grid;
   justify-content: center;
-  grid-template-columns: 0.75fr;
+  grid-template-columns: 1fr;
 }
 .container .nav {
   display: grid;
