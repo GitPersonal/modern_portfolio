@@ -245,6 +245,9 @@ img {
   grid-template-columns: 1fr 1fr;
   place-items: center;
 }
+.container .popular-wrap h2 {
+  font-size: 1rem;
+}
 .container .popular-wrap .digits {
   position: relative;
   display: flex;
@@ -300,23 +303,31 @@ img {
 .container .graph-section .graph {
   box-shadow: 2px 6px 12px 1px #ccc;
 }
+.container .graph-section .stats {
+  padding: 2rem 0;
+}
 .container .graph-section .stats h5 {
   font-size: 5rem;
 }
 .container .comments-wrap {
   display: grid;
   grid-template-columns: 0.75fr;
-  place-items: center;
+  grid-auto-rows: 1fr;
   justify-content: center;
 }
 .container .comments-wrap .person {
   padding: 1rem;
   text-align: center;
 }
+.container .comments-wrap .person .fa-star {
+  padding: 0.65rem 0;
+}
 .container footer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr;
+  place-items: center;
+  justify-content: center;
   text-align: center;
   line-height: 2;
   background-color: #F9F9FA;
@@ -352,7 +363,7 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .container {
-    grid-template-columns: 0.75fr;
+    grid-template-columns: 1fr;
   }
   .container .nav {
     display: grid;
@@ -421,7 +432,7 @@ img {
   }
   .container .popular-wrap h2 {
     place-self: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .container .popular-wrap .digits {
     place-self: center;
@@ -503,6 +514,11 @@ img {
   .container footer .footer-copyright {
     grid-column: 1/7;
     padding: 3rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .container {
+    grid-template-columns: 0.75fr;
   }
 }
 
