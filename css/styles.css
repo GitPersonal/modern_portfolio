@@ -310,6 +310,9 @@ img {
   font-size: 5rem;
   text-align: center;
 }
+.container .graph-section .stats p {
+  text-align: center;
+}
 .container .comments-wrap {
   display: grid;
   grid-template-columns: 0.75fr;
