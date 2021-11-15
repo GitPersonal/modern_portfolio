@@ -190,7 +190,7 @@ img {
 .container .hero .copy .info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  font-size: 0.75rem;
 }
 .container .hero .copy .info p {
   color: #EC5F40;
@@ -376,6 +376,9 @@ img {
   }
   .container .hero .copy h1 span {
     font-size: 5rem;
+  }
+  .container .hero .copy .info {
+    font-size: initial;
   }
   .container .logos {
     padding: 1rem;
