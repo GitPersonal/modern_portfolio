@@ -199,6 +199,9 @@ img {
   grid-template-columns: repeat(3, 1fr);
   font-size: 0.75rem;
 }
+.container .hero .copy .info h5 {
+  font-size: 0.75rem;
+}
 .container .hero .copy .info p {
   color: #EC5F40;
 }
@@ -279,6 +282,9 @@ img {
   grid-template-columns: 1fr;
   place-items: center;
 }
+.container .products-copy .cta {
+  box-shadow: 2px 6px 12px 1px #ccc;
+}
 .container .popular-cards {
   display: grid;
   margin: 1rem;
@@ -297,6 +303,9 @@ img {
   font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: 700;
+}
+.container .popular-cards .card .card-copy .cta {
+  box-shadow: 2px 6px 12px 1px #ccc;
 }
 .container .popular-cards .card p {
   padding: 1rem 0;
@@ -401,7 +410,7 @@ img {
     align-self: center;
   }
   .container .hero .copy h1 {
-    font-size: 5rem;
+    font-size: 4.75rem;
     letter-spacing: -4px;
   }
   .container .hero .copy h1 span {
@@ -433,6 +442,9 @@ img {
     grid-column: 6/span 1;
     grid-row: 2;
   }
+  .container .full-width-copy {
+    line-height: 2;
+  }
   .container .explore-icons {
     gap: none;
     grid-template-columns: repeat(4, 1fr);
@@ -440,6 +452,7 @@ img {
   }
   .container .products-copy {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
   .container .products-copy .copy-area {
     align-self: center;
@@ -450,14 +463,14 @@ img {
     grid-template-columns: 1fr 1fr;
   }
   .container .popular-wrap h2 {
-    place-self: center;
+    place-self: start;
     font-size: 2rem;
   }
   .container .popular-wrap .digits {
-    place-self: center;
+    place-self: end;
   }
   .container .popular-wrap .digits #one {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .container .popular-wrap .digits hr {
     font-size: 1rem;
@@ -465,7 +478,7 @@ img {
     margin: 0 11px 0 3px;
   }
   .container .popular-wrap .digits #two {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .container .popular-wrap .digits hr {
     font-size: 1rem;
@@ -473,7 +486,7 @@ img {
     margin: 0 11px 0 3px;
   }
   .container .popular-wrap .digits #three {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .container .popular-wrap .digits hr {
     font-size: 1rem;
